@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'main.dart';
 
 class Splash extends StatefulWidget {
-
   const Splash({super.key});
 
   @override
@@ -26,8 +25,6 @@ class _SplashState extends State<Splash> {
 
     // Navigate based on the login status
     if (isLoggedIn) {
-      print(sp.get('email'));
-      print(sp.get('password'));
       Navigator.pushReplacementNamed(context, '/homescreen');
     } else {
       Navigator.pushReplacementNamed(context, '/login');
@@ -41,7 +38,7 @@ class _SplashState extends State<Splash> {
         child: Align(
           alignment: Alignment.center,
           child: Text(
-            "Welcome to Flutter Sukker",
+            "Welcome to My First App",
             style: TextStyle(
               fontSize: 50,
               fontWeight: FontWeight.bold,

@@ -45,7 +45,7 @@ class _HomeState extends State<Home> {
         ),
       ),
       body: Center(
-        child: Text("Welcome $_email" ?? 'Loading...',
+        child: Text("Welcome $_email",
           style: TextStyle(
             fontSize: 50,
             fontWeight: FontWeight.bold,
